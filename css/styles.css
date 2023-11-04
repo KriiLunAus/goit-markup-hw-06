@@ -821,3 +821,9 @@ Form modal
 .form-send:hover {
   background-color: #404bbf;
 }
+
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
