@@ -16,9 +16,10 @@ button {
   cursor: pointer;
 }
 .container {
-  width: 1158px;
+  /* max-width: 1158px; */
+  width: 320px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 /* HEADER STYLES */
 .body {
@@ -34,7 +35,7 @@ button {
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -47,7 +48,7 @@ button {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
-  margin-right: 76px;
+  padding: 18px 0;
 }
 
 .header-logo-part {
@@ -201,15 +202,17 @@ button {
   justify-content: center;
 }
 
-/* SECTION HERO */
+/* <===========================================================>
+<==================== SECTION HERO ==================>
+<===========================================================> */
 
 .hero {
   font-weight: 500;
-  padding: 188px 0;
+  padding: 72px 0;
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
   background-color: #2e2f42;
-  max-width: 1440px;
+  max-width: 320px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -246,7 +249,7 @@ button {
   border: none;
   cursor: pointer;
   margin: 0 auto;
-  margin-top: 48px;
+  margin-top: 72px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-service:focus,
@@ -254,7 +257,9 @@ button {
   background-color: #404bbf;
 }
 
-/* SECTION FEATURES */
+/* <===========================================================>
+<==================== SECTION FEATURES ==================>
+<===========================================================> */
 
 .feature-icon-container {
   display: flex;
@@ -269,12 +274,12 @@ button {
 }
 
 .content-features {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .features {
   display: flex;
-  width: 1440px;
-  padding-left: 24px;
+  flex-wrap: wrap;
+  width: 320px;
 }
 .visually-hidden {
   position: absolute;
@@ -294,23 +299,24 @@ button {
   margin: 0 auto;
   padding: 0;
   display: flex;
-  gap: 24px;
+  gap: 72px;
   flex-wrap: wrap;
 }
 
 .section-two-list-element {
   list-style: none;
-  width: calc((100% - 72px) / 4);
   display: inline-block;
 }
 
 .section-two-list-header {
   color: #2e2f42;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.4px;
   margin-bottom: 8px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .section-two-list-paragraph {
@@ -321,7 +327,9 @@ button {
   letter-spacing: 0.32px;
 }
 
-/* SECTION OUR TEAM */
+/* <===========================================================>
+<==================== OUR TEAM ==================>
+<===========================================================> */
 
 .our-team-container {
   background-color: #f4f4fd;
@@ -332,29 +340,30 @@ button {
 
 .our-team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
   margin: 0 auto;
   padding: 0;
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  /* flex-basis: calc((100% - 3 * 24px) / 4); */
 }
 
 .our-team {
   margin: 0 auto;
   background: #f4f4fd;
-  display: block;
-  padding: 120px 0;
+  display: flex;
+
+  padding: 96px 0;
+  width: 320px;
 }
 .our-team-title {
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.72px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
-  line-height: 1.11;
   text-align: center;
   margin-bottom: 72px;
-  margin-top: 0;
 }
 
 .our-team-list-element {
@@ -366,6 +375,7 @@ button {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  margin: 0 auto;
 }
 
 .our-team-li-head {
@@ -419,12 +429,14 @@ button {
 .team-icon {
   fill: #f4f4fd;
 }
-/* SECTION PORTFOLIO */
+/* <===========================================================>
+<==================== PORTFOLIO ==================>
+<===========================================================> */
 
 .section-portfolio {
   text-align: center;
-  padding: 120px 0;
-  width: 1440px;
+  padding: 96px 0;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -448,7 +460,7 @@ button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px;
   row-gap: 48px;
   position: relative;
 }
@@ -461,14 +473,15 @@ button {
   flex-direction: column;
   width: calc((1440 - 48px) / 3);
   cursor: pointer;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .image-container {
   position: relative;
   overflow: hidden;
-  width: 360px;
-  height: 300px;
 }
 .overlay {
   font-size: 16px;
@@ -521,36 +534,38 @@ button {
   z-index: 1;
   background-color: #ffffff;
 }
-
-/* FOOTER */
+/* <===========================================================>
+<==================== FOOTER ==================>
+<===========================================================> */
 
 .footer-container {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  flex-direction: column;
 }
 
 .footer-section {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .footer-logo-link {
   display: inline-block;
-  color: var(--IRIS, #4d5ae5);
+  color: #4d5ae5;
   font-family: Raleway, sans-serif;
+  text-align: center;
   font-size: 18px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  line-height: 1.17;
   margin-bottom: 16px;
   width: 264px;
 }
 .logo-container {
-  margin-right: 120px;
+  margin: 0 auto;
 }
 
 .footer-link-part {
@@ -563,7 +578,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
-  margin: 0;
+  margin-bottom: 72px;
 }
 
 .footer-social-media-title {
@@ -574,15 +589,17 @@ button {
   letter-spacing: 0.02em;
   display: block;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-media-list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   list-style-type: none;
   gap: 16px;
   padding: 0;
-  margin: 0;
+  margin-bottom: 72px;
 }
 
 .footer-link {
@@ -603,16 +620,50 @@ button {
   fill: #f4f4fd;
 }
 
-.footer-subscribe {
+.footer-label {
   display: flex;
-  gap: 24px;
+  justify-content: center;
+  margin-bottom: 16px;
 }
+.subscribe-paragraph {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.footer-input {
+  display: block;
+  width: 264px;
+  height: 40px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: transparent;
+  padding: 8px 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  border-radius: 4px;
+  border: 1px solid #fff;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
 .subscribe-button {
   display: flex;
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
   min-width: 165px;
+  margin: 0 auto;
 
   font-weight: 500;
   cursor: pointer;
@@ -627,46 +678,13 @@ button {
   background: #4d5ae5;
 }
 
-.footer-label {
-  margin-left: 80px;
-}
-
-.subscribe-paragraph {
-  display: block;
-  font-weight: 500;
-  color: #fff;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  margin-bottom: 16px;
-  margin-left: 80px;
-}
-
-.footer-input {
-  width: 264px;
-  height: 40px;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  background-color: transparent;
-  padding: 8px 16px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-
-  border-radius: 4px;
-  border: 1px solid #fff;
-}
-
-input::placeholder {
-  color: #fff;
-}
 .subscribe-icon {
   margin-left: 16px;
 }
-/* ---------------------------------------------
-Form modal
------------------------------------------ */
+/* <===========================================================>
+<==================== MODAL ==================>
+<===========================================================> */
+
 .modal-background {
   z-index: 99999;
   position: fixed;
