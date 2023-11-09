@@ -151,13 +151,7 @@
       <section class="hero">
         <div class="hero-container">
           <h1 class="hero-header">Effective Solutions for Your Business</h1>
-          <button
-            onclick="document.getElementById('modal').style.display='block'"
-            type="button"
-            class="order-service"
-          >
-            Order Service
-          </button>
+          <button type="button" class="order-service">Order Service</button>
         </div>
       </section>
       <!-- SECTION FEATURES -->
@@ -225,6 +219,7 @@
             <!-- First member -->
             <li class="our-team-list-element">
               <img
+                srcset="./images/mark-guerrero@2x.jpg 2x"
                 src="./images/mark-guerrero.jpg"
                 alt="Face of the Product Designer"
                 width="264"
@@ -282,6 +277,7 @@
             <!-- Second member -->
             <li class="our-team-list-element">
               <img
+                srcset="./images/tom-ford@2x.jpg 2x"
                 src="./images/tom-ford.jpg"
                 alt="Face of the Frontend Developer"
                 width="264"
@@ -339,6 +335,7 @@
             <!-- Third member -->
             <li class="our-team-list-element">
               <img
+                srcset="./images/camila-garcia@2x.jpg 2x"
                 src="./images/camila-garcia.jpg"
                 alt="Face of the Marketing"
                 width="264"
@@ -396,6 +393,7 @@
             <!-- Fourth member-->
             <li class="our-team-list-element">
               <img
+                srcset="./images/daniel-wilson@2x.jpg 2x"
                 src="./images/daniel-wilson.jpg"
                 alt="Face of the UI Designer"
                 width="264"
@@ -460,10 +458,17 @@
             <li class="section-portfolio-list-element">
               <div class="image-container">
                 <img
+                  srcset="
+                    ./images/banking-app-mobile@2x.jpg  576w,
+                    ./images/banking-app-mobile.jpg     288w,
+                    ./images/banking-app-tablet@2x.jpg  712w,
+                    ./images/banking-app-tablet.jpg     356w,
+                    ./images/banking-app-desktop@2x.jpg 720w,
+                    ./images/banking-app-desktop.jpg    360w
+                  "
+                  sizes="(min-width:1440px) 360px, (min-width:768px) 356px, (max-width:767px) 288px"
                   src="./images/banking-app.jpg"
                   alt="banking app picture"
-                  width="288"
-                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -479,10 +484,17 @@
             <li class="section-portfolio-list-element">
               <div class="image-container">
                 <img
+                  srcset="
+                    ./images/cashless-payment-mobile.jpg     288w,
+                    ./images/cashless-payment-tablet.jpg     356w,
+                    ./images/cashless-payment-desktop.jpg    360w,
+                    ./images/cashless-payment-mobile@2x.jpg  576w,
+                    ./images/cashless-payment-tablet@2x.jpg  712w,
+                    ./images/cashless-payment-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width:1440px) 360px, (min-width:768px) 356px, (max-width:767px) 288px"
                   src="./images/cashless-payment.jpg"
-                  alt="cashless payment app"
-                  width="288"
-                  height="280"
+                  alt="cashless-payment app"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -500,10 +512,17 @@
             <li class="section-portfolio-list-element">
               <div class="image-container">
                 <img
+                  srcset="
+                    ./images/meditation-app-mobile.jpg     288w,
+                    ./images/meditation-app-tablet.jpg     356w,
+                    ./images/meditation-app-desktop.jpg    360w,
+                    ./images/meditation-app-mobile@2x.jpg  576w,
+                    ./images/meditation-app-tablet@2x.jpg  712w,
+                    ./images/meditation-app-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width:1440px) 360px, (min-width:768px) 356px, (max-width:767px) 288px"
                   src="./images/meditation-app.jpg"
                   alt="meditation app"
-                  width="288"
-                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -521,10 +540,17 @@
             <li class="section-portfolio-list-element">
               <div class="image-container">
                 <img
+                  srcset="
+                    ./images/taxi-service-mobile.jpg     288w,
+                    ./images/taxi-service-tablet.jpg     356w,
+                    ./images/taxi-service-desktop.jpg    360w,
+                    ./images/taxi-service-mobile@2x.jpg  576w,
+                    ./images/taxi-service-tablet@2x.jpg  712w,
+                    ./images/taxi-service-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width:1440px) 360px, (min-width:768px) 356px, (max-width:767px) 288px"
                   src="./images/taxi-service.jpg"
                   alt="taxi service app"
-                  width="288"
-                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -542,10 +568,17 @@
             <li class="section-portfolio-list-element">
               <div class="image-container">
                 <img
+                  srcset="
+                    ./images/screen-illustrations-mobile.jpg     288w,
+                    ./images/screen-illustrations-tablet.jpg     356w,
+                    ./images/screen-illustrations-desktop.jpg    360w,
+                    ./images/screen-illustrations-mobile@2x.jpg  576w,
+                    ./images/screen-illustrations-tablet@2x.jpg  712w,
+                    ./images/screen-illustrations-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width:1440px) 360px, (min-width:768px) 356px, (max-width:767px) 288px"
                   src="./images/screen-illuxtrations.jpg"
                   alt="screen illustrations app"
-                  width="288"
-                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -563,10 +596,17 @@
             <li class="section-portfolio-list-element">
               <div class="image-container">
                 <img
+                  srcset="
+                    ./images/online-courses-mobile.jpg     288w,
+                    ./images/online-courses-tablet.jpg     356w,
+                    ./images/online-courses-desktop.jpg    360w,
+                    ./images/online-courses-mobile@2x.jpg  576w,
+                    ./images/online-courses-tablet@2x.jpg  712w,
+                    ./images/online-courses-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width:1440px) 360px, (min-width:768px) 356px, (max-width:767px) 288px"
                   src="./images/online-courses.jpg"
                   alt="online cources app"
-                  width="288"
-                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
